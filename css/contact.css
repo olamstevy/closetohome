@@ -1,0 +1,80 @@
+.main_section {
+  gap: 30px;
+}
+
+.contact_section_cont1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.contact_section_cont1 .leave_msg_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 0 0;
+}
+
+.leave_msg_cont .section_title {
+  color: #fff;
+  text-align: center;
+  font-family: "Sintony";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.leave_msg_cont .contact_msg_field {
+  display: flex;
+  height: 300px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 2px solid #eceff1;
+  background: #9e9e9e4d;
+}
+
+.leave_msg_cont .submit_contact_msg {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid #eceff1;
+  color: #263238;
+  font-family: "Quicksand";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact_section_cont .contact_cont {
+  align-self: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* MAP CSS */
+.map_cont {
+  align-self: stretch;
+  width: 50%;
+  border-radius: 8px;
+  border: 2px solid #457b9d;
+  background: #457b9d;
+  overflow: hidden;
+}
+
+.map_cont iframe {
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+}
