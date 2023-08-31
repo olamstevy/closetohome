@@ -1,31 +1,59 @@
 "use strict";
 
-window.addEventListener("load", function () {
-  const membIconMappings = [
+// Function to show FAQ answer overlay
+const showFaqAns = (question, answer) => {
+  const faqOverlay = document.querySelector(".faq_overlay");
+  const faqQuesEl = document.querySelector(".faq_overlay .quest_text");
+  const faqAnsEl = document.querySelector(".faq_overlay .faq_ans_text");
+
+  faqQuesEl.textContent = question;
+  faqAnsEl.textContent =
+    answer ?? "Sorry, this question has not been answered!";
+  faqOverlay.style.display = "flex";
+  document.body.style.overflowY = "hidden"; // Disable background scrolling
+};
+
+// Function to hide FAQ answer overlay
+const hideFaqAns = () => {
+  const faqOverlay = document.querySelector(".faq_overlay");
+  faqOverlay.style.display = "none";
+  document.body.style.overflowY = ""; // Re-enable background scrolling
+};
+
+window.addEventListener("load", () => {
+  const membershipIcons = [
     "./assets/charm_circle-tick.svg",
     "./assets/charm_circle-tick (1).svg",
     "./assets/charm_circle-tick (2).svg",
     "./assets/charm_circle-tick (3).svg",
   ];
 
-  const img = document.querySelector(".about_section_img img");
-  const content = document.querySelector(".about_section_content");
-  const faq_open_btns = document.querySelectorAll(
+  const aboutImage = document.querySelector(".about_section_img img");
+  const aboutContent = document.querySelector(".about_section_content");
+  const faqOpenButtons = document.querySelectorAll(
     ".faq_section_cont .open_ans_btn"
   );
+  const faqCloseBtn = document.querySelector(".faq_overlay .close_ans_btn");
 
-  faq_open_btns.forEach((btn) => {
+  faqCloseBtn.addEventListener("click", hideFaqAns);
+
+  faqOpenButtons.forEach((btn) => {
     btn.src = "assets/simple-line-icons_plus.svg";
+    btn.addEventListener("click", () => {
+      const faqQues = btn.previousElementSibling.textContent;
+      const faqAns = btn.dataset.answer;
+      showFaqAns(faqQues, faqAns);
+    });
   });
 
-  for (let i = 0; i < membIconMappings.length; i++) {
-    const membListIcons = document.querySelectorAll(
+  membershipIcons.forEach((iconPath, i) => {
+    const membershipIconsList = document.querySelectorAll(
       `#memb_cont_${i} .memb_type_benefit img`
     );
-    membListIcons.forEach((img) => {
-      img.src = membIconMappings[i];
+    membershipIconsList.forEach((icon) => {
+      icon.src = iconPath;
     });
-  }
+  });
 
-  img.style.height = `${content.clientHeight}px`;
+  aboutImage.style.height = `${aboutContent.clientHeight}px`;
 });

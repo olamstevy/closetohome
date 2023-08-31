@@ -565,6 +565,64 @@ header {
   cursor: pointer;
 }
 
+.faq_overlay {
+  display: none;
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(38, 50, 56, 0.95);
+}
+
+.faq_overlay .faq_overlay_ans_cont {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 40vw;
+}
+
+.faq_overlay .faq_overlay_ans_cont .quest_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.faq_overlay .quest_cont .quest_text {
+  flex: 1 0 0;
+  color: #eceff1;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.faq_overlay .quest_cont .close_ans_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.faq_overlay .faq_ans_text {
+  color: #fff;
+  opacity: 75%;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-self: stretch;
+}
+
 .footer {
   padding: 0px 60px 30px 60px;
 }
