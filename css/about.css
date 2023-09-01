@@ -1,3 +1,8 @@
+nav ul li:nth-child(3) {
+  border: 1px solid transparent;
+  border-image: linear-gradient(#e6c16900 50%, #e6c169bf) 1;
+}
+
 .main_section {
   gap: 30px;
 }

@@ -14,6 +14,11 @@ header {
   background-size: cover;
 }
 
+nav ul li:nth-child(1) {
+  border: 1px solid transparent;
+  border-image: linear-gradient(#e6c16900 50%, #e6c169bf) 1;
+}
+
 .herotexts {
   width: 100%;
   display: flex;
@@ -295,99 +300,22 @@ header {
   align-self: stretch;
 }
 
-.memb_section_cont .members_conts {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  align-self: stretch;
-}
-
 .memb_section_cont .memb_cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   align-self: stretch;
-  width: 100%;
-  height: fit-content;
-  min-height: 150px;
-  min-width: 220px;
-  gap: 10px;
-  padding: 15px;
-  border-radius: 8px;
   box-shadow: 15px 15px 10px 0px #00000080;
-
-  flex: 1 0 0;
 }
 
 #memb_cont_0 {
   margin-top: 0px;
-  color: #000;
-  background: #e6c169bf;
 }
 #memb_cont_1 {
   margin-top: 30px;
-  color: #eceff1;
-  background: #457b9dbf;
 }
 #memb_cont_2 {
   margin-top: 60px;
-  color: #eceff1;
-  background: #457b9dbf;
 }
 #memb_cont_3 {
   margin-top: 90px;
-  color: #263238;
-  background: #eceff1bf;
-}
-
-.memb_cont .memb_type_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-
-.memb_cont .memb_type_header p {
-  font-family: "Open Sans";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.memb_cont .memb_type_header img {
-  width: 30px;
-  height: 30px;
-}
-
-.memb_cont .memb_type_benefits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.memb_cont .memb_type_benefit {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  align-self: stretch;
-}
-
-.memb_cont .memb_benefit img {
-  width: 20px;
-  height: 20px;
-}
-
-.memb_cont .memb_type_benefit p {
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .memb_cont .select_memb_btn {
@@ -574,7 +502,7 @@ header {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: rgba(38, 50, 56, 0.95);
+  background: rgba(38, 50, 56, 0.98);
 }
 
 .faq_overlay .faq_overlay_ans_cont {
@@ -586,6 +514,7 @@ header {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.05);
   width: 40vw;
+  border: solid #ffffff18 1px;
 }
 
 .faq_overlay .faq_overlay_ans_cont .quest_cont {

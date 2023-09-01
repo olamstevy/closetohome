@@ -1,3 +1,8 @@
+nav ul li:nth-child(2) {
+  border: 1px solid transparent;
+  border-image: linear-gradient(#e6c16900 50%, #e6c169bf) 1;
+}
+
 .reg_section_cont {
   display: flex;
   flex-direction: column;
