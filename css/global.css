@@ -114,6 +114,7 @@ nav .signup_btn {
   font-family: "Quicksand";
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 nav .signup_btn {
@@ -358,4 +359,120 @@ nav .signup_btn {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.login_overlay,
+.signup_overlay {
+  /* display: flex; */
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(38, 50, 56, 0.98);
+}
+
+.login_overlay .login_overlay_cont,
+.signup_overlay .signup_overlay_cont {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 25vw;
+  border: solid #ffffff18 1px;
+}
+
+.login_overlay .login_overlay_cont .header_cont,
+.signup_overlay .signup_overlay_cont .header_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.login_overlay .header_cont .login_title,
+.signup_overlay .signup_overlay_cont .signup_title {
+  color: #eceff1;
+  font-family: "Sintony";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.login_overlay .login_overlay_cont .close_login_overlay_btn,
+.signup_overlay .signup_overlay_cont .close_signup_overlay_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.login_overlay .login_overlay_content,
+.signup_overlay .signup_overlay_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.login_overlay .username_cont,
+.login_overlay .password_cont,
+.signup_overlay .username_cont,
+.signup_overlay .password_cont,
+.signup_overlay .confirm_password_cont {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #eceff1;
+}
+
+.login_overlay .username_cont img,
+.login_overlay .password_cont img,
+.signup_overlay .username_cont img,
+.signup_overlay .password_cont img,
+.signup_overlay .confirm_password_cont img {
+  width: 30px;
+  height: 30px;
+}
+
+.login_overlay .username_cont input,
+.login_overlay .password_cont input,
+.signup_overlay .username_cont input,
+.signup_overlay .password_cont input,
+.signup_overlay .confirm_password_cont input {
+  flex: 1 0 0;
+  background: transparent;
+  color: #263238;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login_overlay .login_overlay_content .sumbit_login_btn,
+.signup_overlay .signup_overlay_content .sumbit_signup_btn {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #9e9e9e80;
+  color: #eceff1;
+  font-family: "Quicksand";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
