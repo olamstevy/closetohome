@@ -55,5 +55,11 @@ window.addEventListener("load", () => {
     });
   });
 
-  aboutImage.style.height = `${aboutContent.clientHeight}px`;
+
+  window.addEventListener('resize', () => {
+    console.log(window.innerWidth);
+    aboutImage.style.height = `${aboutContent.clientHeight}px`;
+  });
+
 });
+

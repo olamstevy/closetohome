@@ -35,7 +35,7 @@ nav ul li:nth-child(1) {
 .herotexts .herotext1 h1 {
   color: #fff;
   font-family: "Open Sans";
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 500;
   line-height: normal;
@@ -552,4 +552,45 @@ nav ul li:nth-child(1) {
 
 .footer {
   padding: 0px 60px 30px 60px;
+}
+
+
+@media (max-width: 768px) {
+  /* Your tablet styles here */
+  .main_section {
+    padding: 0px 30px 15px 30px;
+  }
+
+  .faq_section_cont .faq_section_content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .faq_section_cont .faq_section_content .quest_cont {
+    width: calc(100% - 70px);
+    align-self: center;
+  }
+}
+
+@media (max-width: 414px) {
+  /* Your smartphone styles here */
+}
+
+/* CUSTOM MEDIA QUERIES */
+@media (max-width: 1100px) {
+  .about_section_cont .about_section_img {
+    display: none;
+  }
+
+  .about_section_cont .about_section_content {
+    border-radius: 8px;
+  }
+
+  .about_section_cont .about_section_content .section_title {
+    text-align: center;
+  }
+
+  .about_section_cont .about_section_content .about_more_btn {
+    align-self: center;
+  }
 }
