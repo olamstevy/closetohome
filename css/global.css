@@ -397,6 +397,7 @@ nav .nav_links .hide_menu_btn {
   justify-content: center;
   align-items: center;
   position: fixed;
+  align-self: center;
   background: rgba(38, 50, 56, 0.98);
 }
 
@@ -411,7 +412,6 @@ nav .nav_links .hide_menu_btn {
   background: rgba(255, 255, 255, 0.05);
   width: 25vw;
   min-width: 300px;
-  align-self: center;
   border: solid #ffffff18 1px;
 }
 
