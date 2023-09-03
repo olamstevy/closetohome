@@ -128,6 +128,21 @@ nav .signup_btn {
   color: #000000;
 }
 
+nav .show_menu_btn {
+  display: none;
+  cursor: pointer;
+}
+
+nav .nav_links .hide_menu_btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  cursor: pointer;
+  display: none;
+}
+
 /* MAIN */
 .main_section {
   align-self: stretch;
@@ -395,6 +410,7 @@ nav .signup_btn {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.05);
   width: 25vw;
+  min-width: 300px;
   border: solid #ffffff18 1px;
 }
 
@@ -488,35 +504,11 @@ nav .signup_btn {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  /* Your tablet styles here */
-  html {
-    font-size: 13px;
-  }
-
-  body {
-    padding: 15px 30px;
-    width: calc(100vw - 60px);
-  }
-
-  .reg_form .form_fields .fields_row {
-    flex-direction: column;
-  }
-
-  .contact_section_cont .contact_cont {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 414px) {
-  /* Your smartphone styles here */
-  .memb_cont {
-    max-width: 100%;
-  }
-}
-
-/* CUSTOM MEDIA QUERIES */
 @media (max-width: 1100px) {
+  html {
+    font-size: 14.5px;
+  }
+
   .contact_section_cont {
     flex-direction: column;
   }
@@ -532,6 +524,67 @@ nav .signup_btn {
 
   .contact_details_cont {
     width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Your tablet styles here */
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    padding: 15px 30px;
+    width: calc(100vw - 60px);
+  }
+
+  nav .show_menu_btn {
+    display: block;
+  }
+
+  nav .nav_links {
+    /* display: none; */
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #263238;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 60px 15px 15px 15px;
+    z-index: 999;
+    width: 150px;
+    transform: translateX(100%);
+  }
+
+  nav .nav_links.active {
+    transform: translateX(0%);
+  }
+
+  nav ul li {
+    width: fit-content;
+  }
+
+  nav .nav_links .hide_menu_btn {
+    display: block;
+  }
+
+  .contact_section_cont .contact_cont {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+  .footer nav {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  /* Your smartphone styles here */
+  .memb_cont {
     max-width: 100%;
   }
 }

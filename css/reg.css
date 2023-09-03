@@ -161,6 +161,10 @@ nav ul li:nth-child(2) {
 @media (max-width: 768px) {
   /* Your tablet styles here */
 
+  .reg_form .form_fields .fields_row {
+    flex-direction: column;
+  }
+
   .fields_row input {
     align-self: stretch;
   }
