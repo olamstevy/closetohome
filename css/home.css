@@ -7,7 +7,7 @@ header {
   flex-direction: column;
   padding: 30px 60px 90px 60px;
   width: calc(100% - 120px);
-  min-height: 50vh;
+  min-height: 400px;
   gap: 60px;
   background: linear-gradient(180deg, #00000080 15%, #ffffff80 90%),
     url(../assets/hero_bg.png), #d3d3d3 0px 0px / 100% 100% no-repeat;
@@ -46,6 +46,12 @@ nav ul li:nth-child(1) {
   color: #263238;
 }
 
+
+
+.herotexts .herotext1 a {
+  width: fit-content;
+}
+
 .herotexts .herotext1 button {
   display: flex;
   padding: 10px 20px;
@@ -64,14 +70,14 @@ nav ul li:nth-child(1) {
 }
 
 .herotexts .herotext2 {
-  width: 500px;
+  width: 40%;
   gap: 15px;
   color: white;
   height: fit-content;
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translate(45vw, 40%);
+  transform: translate(115%, 80px);
 }
 
 .herotexts .herotext2 .text1,
@@ -570,6 +576,34 @@ nav ul li:nth-child(1) {
   .faq_section_cont .faq_section_content .quest_cont {
     width: calc(100% - 70px);
     align-self: center;
+  }
+
+  .herotexts {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  
+  .herotexts .herotext1, 
+  .herotexts .herotext2 {
+    width: 100%;
+  }
+
+  .herotexts .herotext1 h1 {
+    text-align: center;
+  }
+
+  .herotexts .herotext1 h1 span {
+    filter: drop-shadow(0px 0px 10px #ffffff80);
+  }
+
+  .herotexts .herotext1 a {
+    align-self: center;
+  }
+
+  .herotexts .herotext2 {
+    position: static;
+    transform: translate(0%, 0%);
   }
 }
 

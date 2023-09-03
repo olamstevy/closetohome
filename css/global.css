@@ -340,6 +340,7 @@ nav .signup_btn {
 /* FOOTER */
 .footer {
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
