@@ -503,12 +503,6 @@ nav .signup_btn {
     flex-direction: column;
   }
 
-  .fields_row input {
-    /* width: calc(100% - 75px); */
-    /* width: 90%; */
-    align-self: stretch;
-  }
-
   .contact_section_cont .contact_cont {
     flex-wrap: wrap;
   }
