@@ -532,6 +532,6 @@ nav .signup_btn {
 
   .contact_details_cont {
     width: 100%;
-    min-width: max-content;
+    max-width: 100%;
   }
 }
