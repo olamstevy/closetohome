@@ -60,7 +60,7 @@ nav ul li:nth-child(1) {
   color: #000;
   font-family: "Quicksand";
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.3rem;
   width: fit-content;
   height: fit-content;
   border-radius: 5px;
@@ -91,7 +91,7 @@ nav ul li:nth-child(1) {
   width: 100%;
   height: fit-content;
   padding: 10px;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: "Open Sans";
   font-weight: 300;
   text-align: justify;
@@ -133,7 +133,7 @@ nav ul li:nth-child(1) {
   color: #fff;
   text-align: center;
   font-family: "Sintony";
-  font-size: 25px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -210,11 +210,11 @@ nav ul li:nth-child(1) {
   font-family: "Open Sans";
   font-weight: 400;
   line-height: normal;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #eceff1;
 }
 .space_cont .space_name {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .space_cont .space_address {
@@ -228,7 +228,7 @@ nav ul li:nth-child(1) {
 }
 
 .space_cont .space_price {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
 }
 
@@ -252,7 +252,7 @@ nav ul li:nth-child(1) {
   color: #eceff1;
   text-align: center;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
@@ -290,7 +290,7 @@ nav ul li:nth-child(1) {
   align-self: center;
   cursor: pointer;
   font-family: "Quicksand";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -335,7 +335,7 @@ nav ul li:nth-child(1) {
   background: transparent;
   align-self: stretch;
   font-family: "Quicksand";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -393,7 +393,7 @@ nav ul li:nth-child(1) {
   align-self: stretch;
   color: #263238;
   font-family: "Sintony";
-  font-size: 25px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -414,7 +414,7 @@ nav ul li:nth-child(1) {
   color: #000;
   text-align: justify;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -433,7 +433,7 @@ nav ul li:nth-child(1) {
   background: #eceff1;
   color: #000;
   font-family: "Quicksand";
-  font-size: 20px;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -453,8 +453,8 @@ nav ul li:nth-child(1) {
   align-self: stretch;
   color: #fff;
   text-align: center;
-  font-family: Sintony;
-  font-size: 25px;
+  font-family: 'Sintony';
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -485,7 +485,7 @@ nav ul li:nth-child(1) {
   flex: 1 0 0;
   color: #eceff1;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -533,7 +533,7 @@ nav ul li:nth-child(1) {
   flex: 1 0 0;
   color: #eceff1;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -550,7 +550,7 @@ nav ul li:nth-child(1) {
   opacity: 75%;
   text-align: justify;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;

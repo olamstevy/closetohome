@@ -490,6 +490,9 @@ nav .signup_btn {
 
 @media (max-width: 768px) {
   /* Your tablet styles here */
+  html {
+    font-size: 13px;
+  }
 
   .contact_section_cont .contact_cont {
     flex-wrap: wrap;
@@ -498,6 +501,9 @@ nav .signup_btn {
 
 @media (max-width: 414px) {
   /* Your smartphone styles here */
+  .memb_cont {
+    max-width: 100%;
+  }
 }
 
 /* CUSTOM MEDIA QUERIES */
@@ -518,4 +524,5 @@ nav .signup_btn {
   .contact_details_cont {
     width: 100%;
     min-width: max-content;
-  }}
+  }
+}
