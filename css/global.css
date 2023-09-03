@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100vw;
+  width: calc(100vw - 120px);
   overflow-x: hidden;
   background-color: #263238;
   padding: 30px 60px 30px 60px;
@@ -492,6 +492,21 @@ nav .signup_btn {
   /* Your tablet styles here */
   html {
     font-size: 13px;
+  }
+
+  body {
+    padding: 15px 30px;
+    width: calc(100vw - 60px);
+  }
+
+  .reg_form .form_fields .fields_row {
+    flex-direction: column;
+  }
+
+  .fields_row input {
+    /* width: calc(100% - 75px); */
+    /* width: 90%; */
+    align-self: stretch;
   }
 
   .contact_section_cont .contact_cont {

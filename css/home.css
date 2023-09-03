@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   gap: 100px;
+  width: 100vw;
 }
 
 header {
@@ -605,10 +606,18 @@ nav ul li:nth-child(1) {
     position: static;
     transform: translate(0%, 0%);
   }
+
+  #memb_cont_1,
+  #memb_cont_2,
+  #memb_cont_3,
+  #memb_cont_4 {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 414px) {
   /* Your smartphone styles here */
+  
 }
 
 /* CUSTOM MEDIA QUERIES */
