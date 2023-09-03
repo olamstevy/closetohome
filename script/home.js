@@ -28,8 +28,6 @@ window.addEventListener("load", () => {
     "./assets/charm_circle-tick (3).svg",
   ];
 
-  const aboutImage = document.querySelector(".about_section_img img");
-  const aboutContent = document.querySelector(".about_section_content");
   const faqOpenButtons = document.querySelectorAll(
     ".faq_section_cont .open_ans_btn"
   );
@@ -54,12 +52,12 @@ window.addEventListener("load", () => {
       icon.src = iconPath;
     });
   });
+  const aboutImage = document.querySelector(".about_section_img");
+  const aboutContent = document.querySelector(".about_section_content");
+  aboutImage.style.height = `${aboutContent.clientHeight}px !important`;
 
-
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     console.log(window.innerWidth);
-    aboutImage.style.height = `${aboutContent.clientHeight}px`;
+    aboutImage.style.height = `${aboutContent.clientHeight}px !important`;
   });
-
 });
-
