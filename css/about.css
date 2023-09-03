@@ -17,7 +17,7 @@ nav ul li:nth-child(3) {
 .about_intro_cont .large_intro_text {
   color: #fff;
   font-family: "Sintony";
-  font-size: 50px;
+  font-size: 3.1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -31,8 +31,8 @@ nav ul li:nth-child(3) {
 .about_intro_cont .small_intro_text {
   color: #9e9e9e;
   text-align: justify;
-  font-family: Lato;
-  font-size: 20px;
+  font-family: "Lato";
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
@@ -55,8 +55,8 @@ nav ul li:nth-child(3) {
 .about_content .section_title {
   align-self: stretch;
   color: #eceff1;
-  font-family: Sintony;
-  font-size: 35px;
+  font-family: "Sintony";
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -72,10 +72,29 @@ nav ul li:nth-child(3) {
 
 .about_texts p {
   color: #eceff1;
-  font-family: Open Sans;
-  font-size: 20px;
+  font-family: "Open Sans";
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 300;
   line-height: 30px; /* 150% */
   align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  /* Your tablet styles here */
+
+  .about_intro_cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_intro_cont .large_intro_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about_intro_cont .small_intro_text {
+    width: 90%;
+    text-align: center;
+  }
 }
