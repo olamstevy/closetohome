@@ -47,8 +47,6 @@ nav ul li:nth-child(1) {
   color: #263238;
 }
 
-
-
 .herotexts .herotext1 a {
   width: fit-content;
 }
@@ -454,7 +452,7 @@ nav ul li:nth-child(1) {
   align-self: stretch;
   color: #fff;
   text-align: center;
-  font-family: 'Sintony';
+  font-family: "Sintony";
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -562,9 +560,12 @@ nav ul li:nth-child(1) {
   padding: 0px 60px 30px 60px;
 }
 
-
 @media (max-width: 768px) {
   /* Your tablet styles here */
+
+  header {
+    padding: 15px 30px 45px 30px;
+  }
   .main_section {
     padding: 0px 30px 15px 30px;
   }
@@ -584,8 +585,7 @@ nav ul li:nth-child(1) {
     gap: 60px;
   }
 
-  
-  .herotexts .herotext1, 
+  .herotexts .herotext1,
   .herotexts .herotext2 {
     width: 100%;
   }
@@ -617,7 +617,6 @@ nav ul li:nth-child(1) {
 
 @media (max-width: 414px) {
   /* Your smartphone styles here */
-  
 }
 
 /* CUSTOM MEDIA QUERIES */

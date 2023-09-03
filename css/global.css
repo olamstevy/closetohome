@@ -389,7 +389,6 @@ nav .nav_links .hide_menu_btn {
 
 .login_overlay,
 .signup_overlay {
-  /* display: flex; */
   display: none;
   width: 100vw;
   height: 100vh;
