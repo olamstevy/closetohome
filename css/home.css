@@ -565,6 +565,7 @@ nav ul li:nth-child(1) {
 
   header {
     padding: 15px 30px 45px 30px;
+    width: calc(100% - 60px);
   }
   .main_section {
     padding: 0px 30px 15px 30px;
