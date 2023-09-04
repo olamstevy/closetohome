@@ -87,7 +87,7 @@ nav ul li:nth-child(1) {
   align-items: center;
   gap: 10px;
   align-self: stretch;
-  width: 100%;
+  width: calc(100% - 20px);
   height: fit-content;
   padding: 10px;
   font-size: 1.1rem;
@@ -156,10 +156,9 @@ nav ul li:nth-child(1) {
 
 .spaces_section_cont .spaces_content .spaces {
   display: flex;
-  width: calc(100% - 84px);
+  width: 100%;
   justify-content: flex-start;
-  align-items: center;
-  padding-left: 15px;
+  align-items: stretch;
   overflow-x: hidden;
   gap: 30px;
 }
@@ -260,6 +259,8 @@ nav ul li:nth-child(1) {
 
 .spaces_section_cont .spaces_content .spaces_nav {
   display: flex;
+  position: absolute;
+  transform: translateX(-100%);
   justify-content: flex-end;
   cursor: pointer;
   align-items: center;
@@ -270,6 +271,16 @@ nav ul li:nth-child(1) {
   background: #263238;
 }
 
+.spaces_section_cont .spaces_content .spaces_nav.right_spaces_nav {
+  right: 30px;
+  transform: rotate(0deg);
+}
+
+.spaces_section_cont .spaces_content .spaces_nav.left_spaces_nav {
+  left: 30px;
+  transform: rotate(180deg);
+  opacity: 25%;
+}
 .spaces_section_cont .spaces_content .spaces_nav img {
   width: 30px;
   height: 30px;
@@ -437,6 +448,10 @@ nav ul li:nth-child(1) {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+}
+
+.about_section_cont .about_section_content a {
+  width: fit-content;
 }
 
 .faq_section_cont {
@@ -634,7 +649,8 @@ nav ul li:nth-child(1) {
     text-align: center;
   }
 
-  .about_section_cont .about_section_content .about_more_btn {
+  .about_section_cont .about_section_content .about_more_btn,
+  .about_section_cont .about_section_content a {
     align-self: center;
   }
 }
